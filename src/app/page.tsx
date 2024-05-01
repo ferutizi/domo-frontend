@@ -1,95 +1,82 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+    <>
+      <header>
+        <h1>compleet labs</h1>
+        <nav>
+          <a>
+            <button>Home</button>
           </a>
-        </div>
-      </div>
+        </nav>
+      </header>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <main>
+        <section>
+          <h2>We build beatiful and realiable web solutions</h2>
+          <p>We strongly believe that comunication, trust and transparency are the essential elements of successful business relationship. Ready for the journey?</p>
+          <div>
+            <button>Learn more</button>
+            <button>Our Projects →</button>
+          </div>
+          <img></img>
+        </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        <section>
+          <h2>Our Services</h2>
+          <p>We feel very strong about our skills when it comes to planning, designing and coding applications. Here is what we love to do!</p>
+          {/* Card */}
+          {/* Card */}
+          {/* Card */}
+        </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+        <section>
+          <div>
+            <h1>We use cutting edge technology</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus aliquam enim eligendi itaque ipsa debitis,
+              voluptatem quod laborum labore officiis autem numquam eos molestias officia dolorum optio tempora eius dicta
+                quaerat non id dolor veritatis odit! Nam, explicabo neque? Consequatur.
+            </p>
+            <div> {/* Grid 2c */}
+              {/* Logos */}
+            </div>
+          </div>
+        </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+        <section>
+          <h2>Clients we worked with</h2>
+          {/* Logos */}
+          {/* Cards */}
+        </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <footer>
+          <div>
+            <h3>compleet labs</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati eum fugit beatae consectetur sunt velit, nobis nam asperiores at ipsa ipsum id dolore odit?</p>
+            {/* iconos */}
+          </div>
+          <div>
+            <div>
+              <h3>SITEMAP</h3>
+              <a>Home</a>
+              <a>Technology</a>
+              <a>Services</a>
+              <a>About</a>
+            </div>
+            <div>
+              <h3>CASE STUDIES</h3>
+              <a>Swiss Airlines</a>
+              <a>Google</a>
+              <a>Apple</a>
+              <a>Nike</a>
+              </div>
+            <div>
+              <h3>CONTACT</h3>
+              <a>Jobs</a>
+              <a>Hire us</a>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </>
   );
 }
